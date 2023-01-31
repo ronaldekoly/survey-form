@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help me know myself a bit better.
+    </p>
+
+    <form id="survey-form" action="">
+      <label for="name"
+        >What's your name? <input id="name-label" type="text" required
+      /></label>
+      <label for="email"
+        >Your email <input id="email-label" type="email" required
+      /></label>
+      <label for="age"
+        >How old are you? (optional)
+        <input id="number-label" type="number" name="age" min="13" max="120"
+      /></label>
+      <label for="dropdown"></label>
+        Which option best describes me in your honest opinion?
+        <select name="" id="dropdown">
+          <option value="1"></option>
+          <option value="2"></option></select
+      ></label>
+    </form>
+  </body>
+</html>
