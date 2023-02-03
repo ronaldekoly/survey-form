@@ -8,28 +8,45 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Tell Me About Myself Survey Form</h1>
     <p id="description">
       Thank you for taking the time to help me know myself a bit better.
     </p>
 
     <form id="survey-form" action="">
       <label for="name"
-        >What's your name? <input id="name" type="text" required
+      id="name-label">What's your name? <input id="name" type="text" placeholder="name" required
       /></label>
       <label for="email"
-        >Your email <input id="email" type="email" required
+        id="email-label">Enter your email here <input id="email" type="email" placeholder="email" required
       /></label>
       <label for="number"
-        >How old are you? (optional)
+        id="number-label">How old are you? (optional)
         <input id="number" type="number" name="age" min="13" max="120"
-      /></label>
+        placeholder="number"/></label>
       <label for="dropdown"></label>
-        Which option best describes me in your honest opinion?
-        <select name="" id="dropdown">
-          <option value="1"></option>
-          <option value="2"></option></select
+        How would you describe me?
+        <select name="dropdown" id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">I am passionate person</option>
+          <option value="2">I am ambitious and driven</option>
+          <option value="3">I am highly organized</option>
+          <option value="4">I'm a people person</option>
+          <option value="5">I'm a natural leader</option>
+          <option value="6">I am a results-oriented</option>
+          <option value="7">I am an excellent communicator</option>
+          </select
       ></label>
+      <label>Who am I to you?</label>
+      <label for="friend">A friend <input type="radio"></label>
+      <label for="colleague">A colleague <input type="radio"></label>
+      <label for="relative">A relative <input type="radio"></label>
+      <label for="relative">Someone you know <input type="radio"></label>
+
+      <label for="comments">Any comments or suggestions?
+         <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Enter your comments or suggestions here..."></textarea>
+
+    <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
